@@ -1,37 +1,14 @@
 @font-face {
-	font-family: 'Jakarta ';
-	font-weight: 300;
-	src: url(../fonts/PlusJakartaSans-Light.ttf) format('ttf');
-}
-
-@font-face {
-	font-family: 'Jakarta';
-	font-weight: 400;
-	src: url(../fonts/PlusJakartaSans-Medium.ttf) format('ttf');
-}
-
-@font-face {
-	font-family: 'Jakarta ';
-	font-weight: 500;
-	src: url(../fonts/PlusJakartaSans-Regular.ttf) format('ttf');
-}
-
-@font-face {
-	font-family: 'Jakarta';
-	font-weight: 600;
-	src: url(../fonts/PlusJakartaSans-SemiBold.ttf) format('ttf');
-}
-
-@font-face {
 	font-family: 'Poppins';
+	font-style: normal;
 	font-weight: 500;
 	src: url(../fonts/Poppins-Medium.ttf) format('ttf');
 }
 
 body {
-	font-family: 'Jakarta', sans-serif;
-	font-weight: 400;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 
 
 .container {
@@ -39,11 +16,17 @@ body {
 	margin: 0 auto;
 }
 
-/* Navigation */
+/* header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-top: 20px;
+}
 
 .logo {
 	display: flex;
-	margin-top: 20px;
 }
 
 .logo__site {
@@ -58,3 +41,49 @@ body {
 
 	font-size: 30px;
 }
+
+.navigation {
+	display: flex;
+}
+
+.navigation__nav__items {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin-right: 75px;
+	
+}
+
+.navigation__nav__item-link {
+	text-decoration: none;
+}
+
+.navigation__nav__item {
+	list-style-type: none;
+	color: #787878;
+	font-size: 18px;
+}
+
+.navigation__nav__item-link:nth-child(n+2){
+	margin-left: 50px;
+}
+
+.navigation__nav__item:hover {
+	color: #31815E;
+	cursor: pointer;
+}
+
+.button {
+	background-image: url(/svg/Rectangle\ 5.svg);
+	width: 155px;
+	height: 55px;
+	position: relative;
+}
+
+.button__text {
+	position: absolute;
+	top: 17px;
+	left: 45px;
+	color: white;
+}
+
